@@ -1,3 +1,25 @@
+// Extracting First Names
+//
+// Problem: Given the name of a person, return the first name of that person.
+//
+// For example, if the name is "Captain Jack Sparrow", return "Jack".
+// If the name is "Madam General Paula Jones", return "Paula".
+// If the name is "Kelly Asbury", return "Kelly".
+//
+// LISP Code:
+//
+// 		(defparameter *titles*
+// 		  '(Ms Miss Mr Master Dr Mrs Col Colonel Gen General Capt Captain Major Admiral Sir Madam))
+//		  "A list of titles that may precede a person's name.")
+//
+//		(defun first-name (name)
+//		  "Select the first name from a name represented as a list"
+//		  (if (member (first name) *titles*)
+//		      (first-name (rest name))
+//		      (first name)))
+//
+
+
 package main
 
 import (
