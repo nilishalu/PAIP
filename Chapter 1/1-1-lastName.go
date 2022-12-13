@@ -24,7 +24,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
+	// "strings"
+	"os"
 )
 
 func isATitle(first string, titles []string) bool {
@@ -58,7 +59,10 @@ func main() {
 	//fullName := "John Q Public"
 	// fullName := "Madam Major General Paula Jones Jr"
 	//fullName := "Morton Downey, Jr"
-	name := strings.Split("Rex Morgan MD,", " ")
+
+	// name := strings.Split("Rex Morgan MD,", " ")
+
+	fullName := os.Args[1:]
 	
-    fmt.Println(lastName(name))
+    fmt.Println(lastName(fullName))
 }
