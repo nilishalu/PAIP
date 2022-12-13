@@ -1,4 +1,4 @@
-// Extracting First Names
+// Extracting last Names
 //
 // Problem: Given the name of a person, return the last name of that person.
 //
